@@ -91,7 +91,7 @@ const Hero2 = () => {
 
         
 
-        <div className='bg-neutral-800 text-center'>
+        <div className='bg-gray-900 text-center'>
             <h1 className='text-5xl font-semibold font-custom p-11'>Course Modules</h1>
             <p>Learn React through well-structured modules.</p>
             <div className="p-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

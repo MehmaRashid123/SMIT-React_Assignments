@@ -1,0 +1,52 @@
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.custom-card {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+   align-items: center;
+
+  
+}
+
+.image-wrapper {
+  height: 220px;      
+  width: 300px;
+ 
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 3s ease;
+}
+
+.custom-card:hover .slide-img {
+  transform: translateY(-60%);
+}
+
+.slide-img.horizontal {
+  top: 0;
+  left: 0;
+  width: auto;      
+  height: 100%;
+}
+
+.custom-card.slide-horizontal:hover .slide-img.horizontal {
+  transform: translateX(-20%);
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 80px 0;
+  justify-content: center;  /* grid ko horizontally center karta hai */
+  justify-items: center;    /* har card ko apne column ke center mein align karta hai */
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import Ball from "../utils/ball";
+import Ball from "../utils/Ball";
 
 const Footer = () => {
   return (

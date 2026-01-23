@@ -1,4 +1,4 @@
-import Ball from '../utils/ball'
+import Ball from '../utils/Ball'
 import Button1 from '../utils/Button1'
 import Bird from '../utils/Bird'
 import Cycle from '../utils/Cycle'

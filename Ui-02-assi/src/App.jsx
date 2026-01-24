@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './components/Hero'
 import CardItem from './components/CardItem'
 import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
 
 export const cardData = [
   {
@@ -65,7 +66,8 @@ const App = () => {
   
   return (
     
-    <div className='bg-white h-full'>
+    <div className='bg-white h-full cursor-none'>
+      <CustomCursor/>
       <Hero/>
       <div className="cards-grid">
       {cardData.map(card => (
